@@ -4,6 +4,18 @@ public class Application {
     private int id;
     private String name;
 
+    public Application() {
+    }
+
+    public Application(int id) {
+        this.id = id;
+    }
+
+    public Application(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }
