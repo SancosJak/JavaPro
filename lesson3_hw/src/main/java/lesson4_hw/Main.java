@@ -26,7 +26,7 @@ public class Main {
         Wolf wolfXml = xmlContext.getBean(Wolf.class);
         Eagle eagleXml = xmlContext.getBean(Eagle.class);
 
-        System.out.println("\u001B[35mNames (XML): \u001B[0m");
+        System.out.println("\u001B[35m \nNames (XML): \u001B[0m");
         System.out.println("Lion: " + lionXml.getName());
         System.out.println("Wolf: " + wolfXml.getName());
         System.out.println("Eagle: " + eagleXml.getName());
