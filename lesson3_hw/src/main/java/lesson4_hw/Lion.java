@@ -1,6 +1,6 @@
 package lesson4_hw;
 
-public class Lion {
+public class Lion implements Animal{
     private String name;
 
     public String getName() {
@@ -9,5 +9,10 @@ public class Lion {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String makesSound() {
+        return "Snarl";
     }
 }

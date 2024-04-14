@@ -4,9 +4,11 @@ import lesson4_hw.Eagle;
 import lesson4_hw.Lion;
 import lesson4_hw.Wolf;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages = "lesson4_hw")
 public class AnimalConfig {
 
     @Bean
