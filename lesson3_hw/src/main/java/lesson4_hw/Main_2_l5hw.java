@@ -4,7 +4,7 @@ import configs.AnimalConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Main_2 {
+public class Main_2_l5hw {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AnimalConfig.class);
 
