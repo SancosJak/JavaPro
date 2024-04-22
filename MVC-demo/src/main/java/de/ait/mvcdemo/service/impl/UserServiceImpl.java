@@ -3,6 +3,7 @@ package de.ait.mvcdemo.service.impl;
 import de.ait.mvcdemo.models.User;
 import de.ait.mvcdemo.repository.UserRepository;
 import de.ait.mvcdemo.service.UserService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository; // зависимость от базы данных
 
-    public UserServiceImpl(UserRepository userRepository){
+    public UserServiceImpl(@Qualifier("userRepositoryFileImpl") UserRepository userRepository){
         this.userRepository = userRepository;
     }
 

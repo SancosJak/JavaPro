@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.ait</groupId>
-    <artifactId>mvc-demo</artifactId>
+    <artifactId>word-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mvc-demo</name>
-    <description>mvc-demo</description>
+    <name>word-demo</name>
+    <description>word-demo</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -30,10 +30,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
