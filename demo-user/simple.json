@@ -1,0 +1,20 @@
+[
+  {
+    "firstName": "Jon",
+    "lastName": "Snow",
+    "email": "jon.snow@got.com",
+    "password": "WinterIsComing"
+  },
+  {
+    "firstName": "Daenerys",
+    "lastName": "Targaryen",
+    "email": "daenerys.targaryen@got.com",
+    "password": "MotherOfDragons"
+  },
+  {
+    "firstName": "Tyrion",
+    "lastName": "Lannister",
+    "email": "tyrion.lannister@got.com",
+    "password": "Imp123"
+  }
+]

@@ -1,5 +1,6 @@
 package de.ait.mvcdemo.controller;
 
+import de.ait.mvcdemo.dto.RegisterDTO;
 import de.ait.mvcdemo.models.User;
 import de.ait.mvcdemo.service.UserService;
 import org.springframework.stereotype.Controller;
@@ -19,14 +20,23 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/signUp")
-    public String addUser(@RequestParam("firstName")String firstName,
-                          @RequestParam("lastName")String lastName,
-                          @RequestParam("email")String email,
-                          @RequestParam("password")String password){
-        userService.addUser(firstName,lastName,email,password);
 
-        System.out.println(firstName + ";" + lastName + ";" + email +";" + password);
+//    @PostMapping("/signUp")
+//    public String addUser(@RequestParam("inputFirstName")String firstName,
+//                          @RequestParam("inputLastName")String lastName,
+//                          @RequestParam("inputEmail")String email,
+//                          @RequestParam("inputPassword")String password){
+//        userService.addUser(firstName,lastName,email,password);
+//
+//        System.out.println(firstName + ";" + lastName + ";" + email +";" + password);
+//
+//        return "redirect:/success_signUp.html";
+//    }
+
+    //with DTO
+        @PostMapping("/signUp")
+    public String addUser(RegisterDTO registerDTO) {
+        userService.addUser(registerDTO);
 
         return "redirect:/success_signUp.html";
     }
