@@ -1,11 +1,13 @@
 package de.ait.demouser.service;
 
 
-import de.ait.demouser.models.User;
+import de.ait.demouser.dto.NewUserDTO;
+import de.ait.demouser.dto.UserDto;
 
 import java.util.List;
 
 public interface UserService {
 
-    List<User> getAllUsers();
+    List<UserDto> getAllUsers();
+    UserDto addUser(NewUserDTO newUserDTO);
 }

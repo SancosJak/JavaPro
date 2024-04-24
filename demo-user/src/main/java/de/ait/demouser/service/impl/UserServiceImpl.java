@@ -1,11 +1,14 @@
 package de.ait.demouser.service.impl;
 
+import de.ait.demouser.dto.NewUserDTO;
+import de.ait.demouser.dto.UserDto;
 import de.ait.demouser.models.User;
 import de.ait.demouser.repository.UserRepository;
 import de.ait.demouser.service.UserService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
@@ -16,19 +19,24 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
     }
 
-    //метод добавления пользователя
-//    @Override
-//    public User addUser(String firstName, String lastName, String email, String password) {
+    @Override
+    public List<UserDto> getAllUsers() {
+//        List<User> users = userRepository.findAll();
+//        List<UserDto> userDtos = new ArrayList<>();
 //
-//        User user = new User(firstName,lastName,email,password);//создаем юзера
-//        userRepository.save(user); // сохраняем юзера в бд
-//
-//        return user;
-//    }
-
+//        for (User user : users) {
+//            UserDto userDto = new UserDto(user.getFirstName(), user.getLastName());
+//            userDtos.add(userDto);
+//        }
+//        return userDtos;
+        return UserDto.from(userRepository.findAll());
+    }
 
     @Override
-    public List<User> getAllUsers() {
-        return userRepository.findAll(); // просто запрашиваем у репозитория
+    public UserDto addUser(NewUserDTO newUserDTO) {
+        User user = new User(newUserDTO.getFirstName(), newUserDTO.getLastName(), newUserDTO.getEmail(), newUserDTO.getPassword());
+        userRepository.save(user);
+       // return new UserDto(user.getFirstName(),user.getLastName());
+        return UserDto.from(user);
     }
 }
