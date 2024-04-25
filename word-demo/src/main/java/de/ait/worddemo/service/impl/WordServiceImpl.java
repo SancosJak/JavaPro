@@ -13,9 +13,12 @@ public class WordServiceImpl implements WordService {
 
     private final WordRepository wordRepository;
 
-    public WordServiceImpl(@Qualifier("wordRepositoryFileImpl") WordRepository wordRepository) {
-        this.wordRepository = wordRepository;
-    }
+//    public WordServiceImpl(@Qualifier("wordRepositoryFileImpl") WordRepository wordRepository) {
+//        this.wordRepository = wordRepository;
+//    }
+public WordServiceImpl(WordRepository wordRepository) {
+    this.wordRepository = wordRepository;
+}
 
     @Override
     public Word addWord(String value) {

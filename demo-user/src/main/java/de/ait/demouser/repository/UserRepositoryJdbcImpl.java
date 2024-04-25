@@ -1,7 +1,6 @@
-package de.ait.demouser.service.impl;
+package de.ait.demouser.repository;
 
 import de.ait.demouser.models.User;
-import de.ait.demouser.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

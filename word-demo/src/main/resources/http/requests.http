@@ -1,0 +1,17 @@
+#GET http://localhost:8080/words
+
+#POST http://localhost:8080/words
+#Content-Type: application/json
+#
+#{
+#  "value": "exampleJson"
+#}
+
+#POST http://localhost:8080/words
+#Content-Type: application/x-www-form-urlencoded
+#
+#word = example
+
+
+
+
