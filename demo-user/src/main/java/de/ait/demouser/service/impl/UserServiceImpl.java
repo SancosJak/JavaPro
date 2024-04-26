@@ -36,11 +36,27 @@ public UserServiceImpl( UserRepository userRepository){
         return UserDto.from(userRepository.findAll());
     }
 
-    @Override
+//    @Override
+//    public UserDto addUser(NewUserDTO newUserDTO) {
+//        User user = new User(newUserDTO.getFirstName(), newUserDTO.getLastName(), newUserDTO.getEmail(), newUserDTO.getPassword());
+//        userRepository.save(user);
+//       // return new UserDto(user.getFirstName(),user.getLastName());
+//        return UserDto.from(user);
+//    }
+        @Override
     public UserDto addUser(NewUserDTO newUserDTO) {
-        User user = new User(newUserDTO.getFirstName(), newUserDTO.getLastName(), newUserDTO.getEmail(), newUserDTO.getPassword());
-        userRepository.save(user);
-       // return new UserDto(user.getFirstName(),user.getLastName());
+    User user = User.builder()
+            .firstName(newUserDTO.getFirstName())
+            .lastName(newUserDTO.getLastName())
+            .email(newUserDTO.getEmail())
+            .password(newUserDTO.getPassword())
+            .build();
+            userRepository.save(user);
         return UserDto.from(user);
+    }
+
+    @Override
+    public UserDto getUser(Long id) {
+        return UserDto.from(userRepository.findById(id));
     }
 }

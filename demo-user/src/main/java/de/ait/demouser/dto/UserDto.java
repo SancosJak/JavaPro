@@ -1,6 +1,7 @@
 package de.ait.demouser.dto;
 
 import de.ait.demouser.models.User;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,12 +17,13 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 
 public class UserDto {
-
+    @Schema(description = "user id", example = "1")
+    private Long id;
     private String firstName;
     private String lastName;
 
     public static UserDto from (User user){
-        return new UserDto(user.getFirstName(), user.getLastName());
+        return new UserDto(user.getId(), user.getFirstName(), user.getLastName());
 
     }
 //    public static List<UserDto> from (List<User> users){

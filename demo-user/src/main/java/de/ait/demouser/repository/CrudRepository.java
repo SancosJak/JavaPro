@@ -4,6 +4,7 @@ import java.util.List;
 
 //CRUD - Create,Read,Update,Delete ( создать,получить,обновить,удалить)
 public interface CrudRepository<T> {
+    T findById(Long id);
 
     List<T> findAll();// получить все данные
 

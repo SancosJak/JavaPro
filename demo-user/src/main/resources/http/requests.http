@@ -1,10 +1,12 @@
-#GET http://localhost:8080/users
-POST http://localhost:8080/users
-Content-Type: application/json
+GET http://localhost:8080/api/users
 
-{
-  "firstName": "Idea User",
-  "lastName": "Idea User lastname",
-  "email": "user@jetbrains.com",
-  "password": "12345Qwerty"
-}
+#POST http://localhost:8080/api/users
+#Content-Type: application/json
+#
+#{
+#  "firstName": "Idea User1",
+#  "lastName": "Idea User lastname1",
+###  "email": "user@jetbrains.com1",
+#  "password": "12345Qwerty1"
+#}
+

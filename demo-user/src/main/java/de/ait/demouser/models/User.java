@@ -8,11 +8,15 @@ import java.util.Objects;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode
+@Builder
 public class User {
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
+
+    //REST  GET  POST   PUT   DELETE
 
 //    public User(String firstName, String lastName, String email, String password) {
 //        this.firstName = firstName;
