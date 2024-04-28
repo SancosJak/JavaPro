@@ -2,6 +2,7 @@ package de.ait.demouser.controller;
 
 
 import de.ait.demouser.dto.NewUserDTO;
+import de.ait.demouser.dto.UpdateUserDto;
 import de.ait.demouser.dto.UserDto;
 import de.ait.demouser.models.User;
 import de.ait.demouser.service.UserService;
@@ -56,8 +57,13 @@ public class UserController {
     @Operation(summary = "update user", description = "available for admin")
     @PutMapping("/{user-id}")
     public UserDto updateUser(@PathVariable("user-id")Long id, @RequestBody UpdateUserDto updateUser){
-
-    return userService.updateUser(id, updateUser);
-
+         return userService.updateUser(id, updateUser);
     }
+
+    @Operation(summary = "Delete user by id", description = "available for admin")
+    @DeleteMapping("/{user-id}")
+    public void deleteUser(@PathVariable("user-id") Long id) {
+        userService.deleteUser(id);
+    }
+
 }

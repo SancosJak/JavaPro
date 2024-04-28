@@ -9,5 +9,6 @@ public interface CrudRepository<T> {
     List<T> findAll();// получить все данные
 
     void save(T model); // cохранить обьект в хранилище
+    void delete(T model);
 
 }

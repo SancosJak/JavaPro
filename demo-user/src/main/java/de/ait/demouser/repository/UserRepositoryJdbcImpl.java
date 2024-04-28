@@ -66,4 +66,9 @@ public class UserRepositoryJdbcImpl implements UserRepository {
         long generatedID = jdbcInsert.executeAndReturnKey(parameters).longValue();
         model.setId(generatedID);
     }
+
+    @Override
+    public void delete(User model) {
+        jdbcTemplate.update("DELETE FROM account WHERE id = ?", model.getId());
+    }
 }

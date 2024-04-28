@@ -1,6 +1,7 @@
 package de.ait.demouser.service.impl;
 
 import de.ait.demouser.dto.NewUserDTO;
+import de.ait.demouser.dto.UpdateUserDto;
 import de.ait.demouser.dto.UserDto;
 import de.ait.demouser.models.User;
 import de.ait.demouser.repository.UserRepository;
@@ -58,5 +59,35 @@ public UserServiceImpl( UserRepository userRepository){
     @Override
     public UserDto getUser(Long id) {
         return UserDto.from(userRepository.findById(id));
+    }
+
+    @Override
+    public UserDto updateUser(Long id, UpdateUserDto updateUserDto) {
+        User user = userRepository.findById(id);
+        if (user != null) {
+            if (updateUserDto.getFirstName() != null) {
+                user.setFirstName(updateUserDto.getFirstName());
+            }
+            if (updateUserDto.getLastName() != null) {
+                user.setLastName(updateUserDto.getLastName());
+            }
+
+            userRepository.save(user);
+
+            return UserDto.from(user);
+        } else {
+            throw new RuntimeException("User with id " + id + " not found for update");
+        }
+    }
+
+    @Override
+    public void deleteUser(Long id) {
+        User user = userRepository.findById(id);
+        if (user != null) {
+            userRepository.delete(user);
+        } else {
+            throw new RuntimeException("User with id " + id + " not found for delete");
+        }
+
     }
 }
