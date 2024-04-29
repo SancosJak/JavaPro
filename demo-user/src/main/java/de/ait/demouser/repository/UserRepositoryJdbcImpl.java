@@ -22,6 +22,7 @@ public class UserRepositoryJdbcImpl implements UserRepository {
     //language=SQL
     private static final String SQL_SELECT_BY_ID = "select * from account where id = ?";
     private static final String SQL_SELECT_ALL = "select * from account";
+    private static final String SQL_UPDATE_BY_ID = "update account set first_name = ?, last_name = ? where id = ?";
     private static final String SQL_DELETE_BY_ID = "DELETE FROM account WHERE id = ?";
 
 
@@ -71,5 +72,19 @@ public class UserRepositoryJdbcImpl implements UserRepository {
     @Override
     public void delete(User model) {
         jdbcTemplate.update(SQL_DELETE_BY_ID, model.getId());
+    }
+
+    @Override
+    public void update(User model) {
+        jdbcTemplate.update(SQL_UPDATE_BY_ID,
+                model.getFirstName(),
+                model.getLastName(),
+                model.getId());
+    }
+
+    @Override
+    public void deleteById(User userForDelete) {
+        jdbcTemplate.update(SQL_DELETE_BY_ID, userForDelete);
+
     }
 }

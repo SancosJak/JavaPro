@@ -6,10 +6,8 @@ import de.ait.demouser.dto.UserDto;
 import de.ait.demouser.models.User;
 import de.ait.demouser.repository.UserRepository;
 import de.ait.demouser.service.UserService;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -63,28 +61,28 @@ public UserServiceImpl( UserRepository userRepository){
 
     @Override
     public UserDto updateUser(Long id, UpdateUserDto updateUserDto) {
-        User user = userRepository.findById(id);
-        if (user != null) {
+        User userForUpdate = userRepository.findById(id);
+        if (userForUpdate != null) {
             if (updateUserDto.getFirstName() != null) {
-                user.setFirstName(updateUserDto.getFirstName());
+                userForUpdate.setFirstName(updateUserDto.getFirstName());
             }
             if (updateUserDto.getLastName() != null) {
-                user.setLastName(updateUserDto.getLastName());
+                userForUpdate.setLastName(updateUserDto.getLastName());
             }
+            userRepository.update(userForUpdate);
 
-            userRepository.save(user);
-
-            return UserDto.from(user);
+            return UserDto.from(userForUpdate);
         } else {
             throw new RuntimeException("User with id " + id + " not found for update");
         }
     }
 
     @Override
-    public void deleteUser(Long id) {
-        User user = userRepository.findById(id);
-        if (user != null) {
-            userRepository.delete(user);
+    public void delete(Long id) {
+        User userForDelete = userRepository.findById(id);
+        if (userForDelete != null) {
+            userRepository.deleteById(userForDelete);
+            UserDto.from(userForDelete);
         } else {
             throw new RuntimeException("User with id " + id + " not found for delete");
         }

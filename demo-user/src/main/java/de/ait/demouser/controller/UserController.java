@@ -4,14 +4,12 @@ package de.ait.demouser.controller;
 import de.ait.demouser.dto.NewUserDTO;
 import de.ait.demouser.dto.UpdateUserDto;
 import de.ait.demouser.dto.UserDto;
-import de.ait.demouser.models.User;
 import de.ait.demouser.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.tags.Tags;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -63,7 +61,8 @@ public class UserController {
     @Operation(summary = "Delete user by id", description = "available for admin")
     @DeleteMapping("/{user-id}")
     public void deleteUser(@PathVariable("user-id") Long id) {
-        userService.deleteUser(id);
+        userService.delete(id);
     }
+
 
 }
