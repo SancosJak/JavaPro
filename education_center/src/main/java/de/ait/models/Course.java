@@ -14,22 +14,27 @@ import java.time.LocalDate;
 @Builder
 @Entity
 public class Course {
-
+    // Hibernate
     public enum State{
-        DRAFT, PUBLISHED
+        DRAFT,PUBLISHED
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private Long id;
-    @Column(nullable = false, length = 25)
-   private String title;
-    @Column(nullable = false, length = 500)
-   private String description;
-   private LocalDate beginDate;
-   private LocalDate endDate;
+    private Long id;
+
+    @Column(nullable = false,length = 25)
+    private String title;
+
+    @Column(nullable = false,length = 500)
+    private String description;
+
+    private LocalDate beginDate;
+    private LocalDate endDate;
+
     @Column(nullable = false)
-   private Double price;
+    private Double price;
+
     @Enumerated(value = EnumType.STRING)
-   private State state;
+    private State state;
 }

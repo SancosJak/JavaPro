@@ -46,10 +46,18 @@ public class UserIntegrationTest {
     }
 
     @Test
-    @Sql(scripts = {"/sql/schema.sql","/sql/data.sql"})
+    @Sql(scripts = {"/sql/schema.sql", "/sql/data.sql"})
     public void return_created_user() throws Exception {
-        mockMvc.perform(post("/api/users"));
-              //  .contentType();
+        mockMvc.perform(post("/api/users")
+                        .contentType("application/json")
+                        .content("{\n" +
+                                "  \"firstName\": \"FakeUser1\",\n" +
+                                "  \"lastName\": \"FakeUser lastname1\",\n" +
+                                "  \"email\": \"user@jetbrains.com\",\n" +
+                                "  \"password\": \"1234\"\n" +
+                                "}"))
+                .andExpect(jsonPath("$.id",is(5)))
+                .andExpect(status().isCreated());
     }
 
 }
