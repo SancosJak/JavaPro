@@ -5,6 +5,7 @@ import de.ait.dto.CourseDto;
 import de.ait.dto.NewCourseDto;
 
 import de.ait.services.CoursesService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ public class CoursesController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<CourseDto> addCourse(@RequestBody NewCourseDto newCourse)
+    public ResponseEntity<CourseDto> addCourse(@RequestBody @Valid NewCourseDto newCourse)
     {
         return ResponseEntity
                 .status(HttpStatus.CREATED)

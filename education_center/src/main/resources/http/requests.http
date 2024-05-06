@@ -4,11 +4,24 @@ POST http://localhost:8080/api/courses
 Content-Type: application/json
 
 {
-  "title": "New course3",
+  "title": "New course4",
   "beginDate": "2024-02-02",
   "endDate": "2024-02-02",
   "description": "Description3",
-  "price": 100.0
+  "price": 40.0
+}
+
+###add wrong course
+
+POST http://localhost:8080/api/courses
+Content-Type: application/json
+
+{
+  "title": "",
+  "beginDate": "2024-02-02",
+  "endDate": "2024-02-02",
+  "description": "Description3",
+  "price": 40000.0
 }
 
 ###get all courses
