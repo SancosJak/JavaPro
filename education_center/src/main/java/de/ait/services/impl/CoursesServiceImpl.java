@@ -2,6 +2,7 @@ package de.ait.services.impl;
 
 import de.ait.dto.CourseDto;
 import de.ait.dto.NewCourseDto;
+import de.ait.dto.UpdateCourseDto;
 import de.ait.exeptions.RestException;
 import de.ait.models.Course;
 import de.ait.repositories.CoursesRepository;
@@ -41,8 +42,34 @@ public class CoursesServiceImpl implements CoursesService {
 
     @Override
     public CourseDto getCourse(Long courseId) {
-        Course course = coursesRepository.findById(courseId)
+        Course course = getCourseOrThrow(courseId);
+        return from(course);
+    }
+
+    private Course getCourseOrThrow(Long courseId) {
+        return coursesRepository.findById(courseId)
                 .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND, "Course with id <" + courseId + "> not found"));
+    }
+
+    @Override
+    public CourseDto deleteCourse(Long courseId) {
+        Course course = getCourseOrThrow(courseId);
+        coursesRepository.deleteById(courseId);
+
+        return from(course);
+    }
+
+    @Override
+    public CourseDto updateCourse(Long courseId, UpdateCourseDto updateCourseDto) {
+        Course course = getCourseOrThrow(courseId);
+
+        course.setTitle(updateCourseDto.getTitle());
+        course.setDescription(updateCourseDto.getDescription());
+        course.setBeginDate(LocalDate.parse(updateCourseDto.getBeginDate()));
+        course.setEndDate(LocalDate.parse(updateCourseDto.getEndDate()));
+        course.setPrice(updateCourseDto.getPrice());
+
+        coursesRepository.save(course);
         return from(course);
     }
 }

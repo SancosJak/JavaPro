@@ -4,6 +4,7 @@ package de.ait.controllers;
 import de.ait.dto.CourseDto;
 import de.ait.dto.NewCourseDto;
 
+import de.ait.dto.UpdateCourseDto;
 import de.ait.services.CoursesService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -40,6 +41,18 @@ public class CoursesController {
     public ResponseEntity<CourseDto> getCourse(@PathVariable("course-id") Long courseId){
         return ResponseEntity
                 .ok(coursesService.getCourse(courseId));
+    }
+    @DeleteMapping("/{course-id}")
+    public ResponseEntity<CourseDto> deleteCourse(@PathVariable("course-id") Long courseId){
+
+        return ResponseEntity
+                .ok(coursesService.deleteCourse(courseId));
+    }
+
+    @PutMapping("/{course-id}")
+    public ResponseEntity<CourseDto> updateCourse(@PathVariable("course-id") Long courseId, @RequestBody @Valid UpdateCourseDto updateCourse){
+        return ResponseEntity
+                .ok(coursesService.updateCourse(courseId, updateCourse));
     }
 
 }
