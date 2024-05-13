@@ -1,24 +1,29 @@
 package de.ait.services.impl;
 
-import de.ait.dto.CourseDto;
-import de.ait.dto.NewCourseDto;
-import de.ait.dto.UpdateCourseDto;
+import de.ait.dto.*;
 import de.ait.exeptions.RestException;
 import de.ait.models.Course;
+import de.ait.models.Lesson;
 import de.ait.repositories.CoursesRepository;
+import de.ait.repositories.LessonsRepository;
 import de.ait.services.CoursesService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import static de.ait.dto.CourseDto.from;
+import static de.ait.dto.LessonDto.from;
+
+import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 @RequiredArgsConstructor
 @Service
 public class CoursesServiceImpl implements CoursesService {
     private final CoursesRepository coursesRepository;
+    private final LessonsRepository lessonsRepository;
 
     @Override
     public CourseDto addCourse(NewCourseDto newCourse) {
@@ -71,5 +76,21 @@ public class CoursesServiceImpl implements CoursesService {
 
         coursesRepository.save(course);
         return from(course);
+    }
+
+    @Override
+    public LessonDto addLessonToCourse(Long courseId, NewLessonDto newLesson) {
+        Course course = getCourseOrThrow(courseId);
+
+        Lesson lesson = Lesson.builder()
+                .name(newLesson.getName())
+                .dayOfWeek(DayOfWeek.valueOf(newLesson.getDayOfWeek()))
+                .startTime(LocalTime.parse(newLesson.getStartTime()))
+                .finishTime(LocalTime.parse(newLesson.getFinishTime()))
+                .course(course)//привязка курса к уроку
+                .build();
+        lessonsRepository.save(lesson);
+        return from(lesson);
+
     }
 }

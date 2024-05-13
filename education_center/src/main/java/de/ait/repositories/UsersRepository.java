@@ -1,6 +1,6 @@
 package de.ait.repositories;
 
-import de.ait.dto.User;
+import de.ait.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsersRepository extends JpaRepository<User, Long> {

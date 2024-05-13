@@ -1,7 +1,7 @@
 package de.ait.services.impl;
 
 import de.ait.dto.NewUserDto;
-import de.ait.dto.User;
+import de.ait.models.User;
 import de.ait.dto.UserDto;
 import de.ait.exeptions.RestException;
 import de.ait.repositories.UsersRepository;
@@ -11,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 
 import static de.ait.dto.UserDto.from;
 

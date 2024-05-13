@@ -1,10 +1,8 @@
 package de.ait.controllers;
 
 
-import de.ait.dto.CourseDto;
-import de.ait.dto.NewCourseDto;
+import de.ait.dto.*;
 
-import de.ait.dto.UpdateCourseDto;
 import de.ait.services.CoursesService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -54,5 +52,17 @@ public class CoursesController {
         return ResponseEntity
                 .ok(coursesService.updateCourse(courseId, updateCourse));
     }
+
+    //Endpoint для добавления урока в курс REST
+    //POST/api/courses/{id-курса}/lessons
+    @PostMapping("/{course_id}/lessons")
+    public ResponseEntity<LessonDto> addLessonToCourse(@PathVariable("course_id") Long courseId, @RequestBody NewLessonDto newLesson){
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(coursesService.addLessonToCourse(courseId,newLesson));
+    }
+
+    // end-point для получения всех уроков определленного курса REST
+    // GET/api/courses/{id-курса}/lessons
 
 }

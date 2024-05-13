@@ -1,5 +1,6 @@
 package de.ait.dto;
 
+import de.ait.models.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

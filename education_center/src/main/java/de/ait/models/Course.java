@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -37,4 +38,10 @@ public class Course {
 
     @Enumerated(value = EnumType.STRING)
     private State state;
+
+    @ManyToMany(mappedBy = "courses")
+    private Set<User> students;
+
+    @OneToMany(mappedBy = "course")
+    private Set<Lesson> lessons;
 }

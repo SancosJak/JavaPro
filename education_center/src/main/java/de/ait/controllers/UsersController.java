@@ -24,5 +24,4 @@ public class UsersController {
                 .status(HttpStatus.CREATED)
                 .body(usersService.registerUser(newUser));
     }
-
 }

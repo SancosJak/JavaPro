@@ -3,7 +3,7 @@ POST http://localhost:8080/api/courses
 Content-Type: application/json
 
 {
-  "title": "New course4",
+  "title": "New course2",
   "beginDate": "2024-02-02",
   "endDate": "2024-02-02",
   "description": "Description3",
@@ -59,4 +59,26 @@ Content-Type: application/json
 {
   "email": "john@john.com",
   "password": "Qwerty007!"
+}
+
+### add lesson to course
+POST http://localhost:8080/api/courses/1/lessons
+Content-Type: application/json
+
+{
+  "name": "Java basic",
+  "startTime": "18:30",
+  "finishTime": "22:00",
+  "dayOfWeek": "MONDAY"
+}
+
+### add another lesson to course
+POST http://localhost:8080/api/courses/1/lessons
+Content-Type: application/json
+
+{
+  "name": "Java Pro",
+  "startTime": "18:30",
+  "finishTime": "22:00",
+  "dayOfWeek": "WEDNESDAY"
 }
