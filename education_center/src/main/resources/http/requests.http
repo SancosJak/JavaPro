@@ -88,3 +88,17 @@ GET http://localhost:8080/api/courses/1/lessons
 
 ### get one lesson from course
 GET http://localhost:8080/api/courses/1/lessons/1
+
+### delete lesson from course
+DELETE http://localhost:8080/api/courses/1/lessons/1
+
+### update lesson from course
+PUT http://localhost:8080/api/courses/1/lessons/1
+Content-Type: application/json
+
+{
+  "name": "Java VIP",
+  "startTime": "18:30",
+  "finishTime": "22:00",
+  "dayOfWeek": "FRIDAY"
+}

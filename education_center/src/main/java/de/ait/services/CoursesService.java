@@ -20,5 +20,9 @@ public interface CoursesService {
     List<LessonDto> getLessonsByCourseId(Long courseId);
 
     LessonDto getLessonByIdFromCourse(Long courseId, Long lessonId);
+
+    LessonDto deleteLessonByIdFromCourse(Long courseId, Long lessonId);
+
+    LessonDto updateLessonByIdFromCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson);
 }
 

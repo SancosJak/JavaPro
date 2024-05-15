@@ -77,5 +77,22 @@ public class CoursesController {
         return ResponseEntity
                 .ok(coursesService.getLessonByIdFromCourse(courseId, lessonId));
     }
+    // end-point для удаления конкретного урока по ID курса и урока
+    @DeleteMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto> deleteLessonByIdFromCourse(
+            @PathVariable("course-id") Long courseId,
+            @PathVariable("lesson-id") Long lessonId) {
+        return ResponseEntity
+                .ok(coursesService.deleteLessonByIdFromCourse(courseId, lessonId));
+    }
+    // end-point для обновления конкретного урока по ID курса и урока
+    @PutMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto> updateLessonByIdFromCourse(
+            @PathVariable("course-id") Long courseId,
+            @PathVariable("lesson-id") Long lessonId,
+            @RequestBody @Valid UpdateLessonDto updateLesson) {
+        return ResponseEntity
+                .ok(coursesService.updateLessonByIdFromCourse(courseId, lessonId, updateLesson));
+    }
 
 }

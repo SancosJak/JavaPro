@@ -115,4 +115,30 @@ public class CoursesServiceImpl implements CoursesService {
 
         return from(lesson);
     }
+
+    @Override
+    public LessonDto deleteLessonByIdFromCourse(Long courseId, Long lessonId) {
+        getCourseOrThrow(courseId);
+        Lesson lesson = lessonsRepository.findByIdAndCourseId(lessonId, courseId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+        lessonsRepository.deleteById(lessonId);
+        return from(lesson);
+    }
+
+    @Override
+    public LessonDto updateLessonByIdFromCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson) {
+        getCourseOrThrow(courseId);
+
+        Lesson lesson = lessonsRepository.findByIdAndCourseId(lessonId, courseId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+        lesson.setName(updateLesson.getName());
+        lesson.setDayOfWeek(updateLesson.getDayOfWeek());
+        lesson.setStartTime(updateLesson.getStartTime());
+        lesson.setFinishTime(updateLesson.getFinishTime());
+        lessonsRepository.save(lesson);
+
+        return LessonDto.from(lesson);
+    }
 }
