@@ -82,3 +82,9 @@ Content-Type: application/json
   "finishTime": "22:00",
   "dayOfWeek": "WEDNESDAY"
 }
+
+### get all lessons from course
+GET http://localhost:8080/api/courses/1/lessons
+
+### get one lesson from course
+GET http://localhost:8080/api/courses/1/lessons/1

@@ -64,5 +64,18 @@ public class CoursesController {
 
     // end-point для получения всех уроков определленного курса REST
     // GET/api/courses/{id-курса}/lessons
+    @GetMapping("/{course-id}/lessons")
+    public ResponseEntity<List<LessonDto>> getLessonsByCourseId(@PathVariable("course-id") Long courseId) {
+        return ResponseEntity
+                .ok(coursesService.getLessonsByCourseId(courseId));
+    }
+    // end-point для получения конкретного урока по ID курса и урока
+    @GetMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto> getLessonByIdFromCourse(
+            @PathVariable("course-id") Long courseId,
+            @PathVariable("lesson-id") Long lessonId) {
+        return ResponseEntity
+                .ok(coursesService.getLessonByIdFromCourse(courseId, lessonId));
+    }
 
 }

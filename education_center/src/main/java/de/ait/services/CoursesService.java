@@ -16,5 +16,9 @@ public interface CoursesService {
     CourseDto updateCourse(Long courseId, UpdateCourseDto updateCourse);
 
     LessonDto addLessonToCourse(Long courseId, NewLessonDto newLesson);
+
+    List<LessonDto> getLessonsByCourseId(Long courseId);
+
+    LessonDto getLessonByIdFromCourse(Long courseId, Long lessonId);
 }
 

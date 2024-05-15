@@ -18,6 +18,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -92,5 +93,26 @@ public class CoursesServiceImpl implements CoursesService {
         lessonsRepository.save(lesson);
         return from(lesson);
 
+    }
+
+      @Override
+    public List<LessonDto> getLessonsByCourseId(Long courseId) {
+        getCourseOrThrow(courseId);
+        List<Lesson> lessons = lessonsRepository.findByCourseId(courseId);
+
+        return lessons.stream()
+                .map(LessonDto::from)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public LessonDto getLessonByIdFromCourse(Long courseId, Long lessonId) {
+        getCourseOrThrow(courseId);
+
+        Lesson lesson = lessonsRepository.findByIdAndCourseId(lessonId, courseId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+
+        return from(lesson);
     }
 }
