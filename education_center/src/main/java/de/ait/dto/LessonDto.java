@@ -6,6 +6,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,6 +32,11 @@ public class LessonDto {
                 .dayOfWeek(lesson.getDayOfWeek().toString())
                 .courseId(lesson.getCourse().getId())
                 .build();
+    }
+    public static List<LessonDto> from(Set<Lesson> lessons){
+        return lessons.stream()
+                .map(LessonDto::from)
+                .collect(Collectors.toList());
     }
     
 }

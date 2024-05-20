@@ -26,7 +26,7 @@ Content-Type: application/json
 GET http://localhost:8080/api/courses
 
 ###get one course id
-GET http://localhost:8080/api/courses/22
+GET http://localhost:8080/api/courses/2
 
 ### delete by id
 DELETE http://localhost:8080/api/courses/3

@@ -8,6 +8,8 @@ import de.ait.repositories.CoursesRepository;
 import de.ait.repositories.LessonsRepository;
 import de.ait.services.CoursesService;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -25,9 +28,14 @@ import java.util.stream.Collectors;
 public class CoursesServiceImpl implements CoursesService {
     private final CoursesRepository coursesRepository;
     private final LessonsRepository lessonsRepository;
+    private Logger logger = LoggerFactory.getLogger(CoursesServiceImpl.class);
 
     @Override
     public CourseDto addCourse(NewCourseDto newCourse) {
+        // здесь будет Join point,  т.е. место, куда мы хотим внедрить advice
+
+        System.out.println("!!!!!!!!!!!!!!!!!ADD COURSE!!!!!!!!!!!!!!!!!!");
+
         Course course = Course.builder()
                 .title(newCourse.getTitle())
                 .description(newCourse.getDescription())
@@ -42,6 +50,13 @@ public class CoursesServiceImpl implements CoursesService {
 
     @Override
     public List<CourseDto> getCourses() {
+
+        String courseTitle = "Test course";
+
+        logger.info("Database request: get all courses");
+        logger.warn("Course with title {} not found",courseTitle);
+        logger.error("SQL exception! Incorrect query");
+
          List<Course> courses = coursesRepository.findAll();
          return from(courses);
     }
@@ -94,8 +109,22 @@ public class CoursesServiceImpl implements CoursesService {
         return from(lesson);
 
     }
+    //from lesson method
+//    @Override
+//    public List<LessonDto> getLessonsOfCourse(Long courseId) {
+//        // найдем курс, у которого хотим получить уроки
+//        Course course = getCourseOrThrow(courseId);
+//
+//        // получим уроки курса
+//        Set<Lesson> lessons = course.getLessons();
+//
+//        // конвертируем в DTO
+//        return from(lessons);
+//    }
 
-      @Override
+
+
+    @Override
     public List<LessonDto> getLessonsByCourseId(Long courseId) {
         getCourseOrThrow(courseId);
         List<Lesson> lessons = lessonsRepository.findByCourseId(courseId);
