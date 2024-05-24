@@ -18,7 +18,8 @@ import static de.ait.dto.UserDto.from;
 @Service
 public class UserServiceImpl implements UsersService {
     private final UsersRepository userRepository;
-    private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    //private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public UserDto registerUser(NewUserDto newUser) {

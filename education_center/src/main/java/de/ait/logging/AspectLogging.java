@@ -2,7 +2,9 @@ package de.ait.logging;
 
 // AspectJ framework
 
+import lombok.SneakyThrows;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,6 +58,19 @@ public class AspectLogging {
     public void afterThrowingExceptionWhileGettingCourseById(Exception e){
         logger.info("Method getCourse of the class CoursesServiceImpl threw an exception while getting course: "+
                 "message -{}",e.getMessage());
+    }
+
+    @SneakyThrows
+    @Around(value = "getCourseById()")
+    public Object profiler(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+        String methodName = proceedingJoinPoint.getSignature().getName();
+        logger.info("Method {} of the class {} is called",methodName,proceedingJoinPoint.getTarget().getClass().getName());
+        long start = System.currentTimeMillis();
+        Object result = proceedingJoinPoint.proceed();
+        long end = System.currentTimeMillis();
+        logger.info("Method {} of the class {} finished its work in {} ms",methodName,proceedingJoinPoint.getTarget().getClass().getName(),end-start);
+        return result;
+
     }
 
     // HomeWork: Pointcut и Advice для метода getCourses

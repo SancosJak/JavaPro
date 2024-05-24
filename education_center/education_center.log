@@ -1,208 +1,225 @@
-2024-05-20T20:06:45.057+02:00  INFO 5648 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 5648 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T20:06:45.059+02:00  INFO 5648 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T20:06:45.936+02:00  INFO 5648 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T20:06:45.995+02:00  INFO 5648 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
-2024-05-20T20:06:46.459+02:00  INFO 5648 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T20:06:46.470+02:00  INFO 5648 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T20:06:46.471+02:00  INFO 5648 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T20:06:46.521+02:00  INFO 5648 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T20:06:46.522+02:00  INFO 5648 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1414 ms
-2024-05-20T20:06:46.654+02:00  INFO 5648 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T20:06:46.764+02:00  INFO 5648 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T20:06:46.796+02:00  INFO 5648 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T20:06:47.082+02:00  INFO 5648 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T20:06:47.112+02:00  INFO 5648 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T20:06:47.357+02:00  INFO 5648 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@100d0218
-2024-05-20T20:06:47.359+02:00  INFO 5648 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T20:06:48.588+02:00  INFO 5648 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T20:06:48.675+02:00  INFO 5648 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:06:49.070+02:00  WARN 5648 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T20:06:49.436+02:00  INFO 5648 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T20:06:49.443+02:00  INFO 5648 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 4.821 seconds (process running for 5.511)
-2024-05-20T20:08:17.966+02:00  INFO 5648 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:08:17.968+02:00  INFO 5648 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T20:08:17.970+02:00  INFO 5648 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-20T20:15:20.225+02:00  INFO 12496 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 12496 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T20:15:20.227+02:00  INFO 12496 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T20:15:21.147+02:00  INFO 12496 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T20:15:21.211+02:00  INFO 12496 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
-2024-05-20T20:15:21.912+02:00  INFO 12496 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T20:15:21.937+02:00  INFO 12496 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T20:15:21.938+02:00  INFO 12496 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T20:15:21.994+02:00  INFO 12496 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T20:15:21.995+02:00  INFO 12496 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1724 ms
-2024-05-20T20:15:22.220+02:00  INFO 12496 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T20:15:22.278+02:00  INFO 12496 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T20:15:22.314+02:00  INFO 12496 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T20:15:22.568+02:00  INFO 12496 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T20:15:22.605+02:00  INFO 12496 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T20:15:22.915+02:00  INFO 12496 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
-2024-05-20T20:15:22.917+02:00  INFO 12496 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T20:15:23.997+02:00  INFO 12496 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T20:15:24.087+02:00  INFO 12496 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:15:24.451+02:00  WARN 12496 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T20:15:24.764+02:00  INFO 12496 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T20:15:24.771+02:00  INFO 12496 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 4.964 seconds (process running for 5.525)
-2024-05-20T20:15:57.521+02:00  INFO 12496 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-20T20:15:57.523+02:00  INFO 12496 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-20T20:15:57.525+02:00  INFO 12496 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-05-20T20:15:57.556+02:00  INFO 12496 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
-2024-05-20T20:15:57.556+02:00  WARN 12496 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
-2024-05-20T20:15:57.557+02:00 ERROR 12496 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
-2024-05-20T20:16:02.529+02:00  INFO 12496 --- [education_center] [http-nio-8080-exec-2] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
-2024-05-20T20:16:02.532+02:00  WARN 12496 --- [education_center] [http-nio-8080-exec-2] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
-2024-05-20T20:16:02.533+02:00 ERROR 12496 --- [education_center] [http-nio-8080-exec-2] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
-2024-05-20T20:17:54.624+02:00  INFO 12496 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:17:54.626+02:00  INFO 12496 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T20:17:54.629+02:00  INFO 12496 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-20T20:50:08.477+02:00  INFO 10636 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 10636 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T20:50:08.479+02:00  INFO 10636 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T20:50:09.060+02:00  INFO 10636 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T20:50:09.115+02:00  INFO 10636 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
-2024-05-20T20:50:09.815+02:00  INFO 10636 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T20:50:09.828+02:00  INFO 10636 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T20:50:09.828+02:00  INFO 10636 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T20:50:09.885+02:00  INFO 10636 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T20:50:09.886+02:00  INFO 10636 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1368 ms
-2024-05-20T20:50:10.024+02:00  INFO 10636 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T20:50:10.084+02:00  INFO 10636 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T20:50:10.109+02:00  INFO 10636 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T20:50:10.314+02:00  INFO 10636 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T20:50:10.337+02:00  INFO 10636 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T20:50:10.532+02:00  INFO 10636 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e321d9d
-2024-05-20T20:50:10.536+02:00  INFO 10636 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T20:50:11.590+02:00  INFO 10636 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T20:50:11.671+02:00  INFO 10636 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:50:12.041+02:00  WARN 10636 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T20:50:12.363+02:00  INFO 10636 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T20:50:12.372+02:00  INFO 10636 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 4.259 seconds (process running for 4.832)
-2024-05-20T20:50:29.467+02:00  INFO 10636 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-20T20:50:29.467+02:00  INFO 10636 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-20T20:50:29.469+02:00  INFO 10636 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-05-20T20:50:29.698+02:00  INFO 10636 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method addCourse of the class CoursesServicesImpl is called with parameter NewCourseDto(title=New course2, description=Description3, beginDate=2024-02-02, endDate=2024-02-02, price=40.0)
-2024-05-20T20:51:46.340+02:00  INFO 10636 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:51:46.342+02:00  INFO 10636 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T20:51:46.344+02:00  INFO 10636 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-20T20:55:50.801+02:00  INFO 21444 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 21444 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T20:55:50.803+02:00  INFO 21444 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T20:55:51.398+02:00  INFO 21444 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T20:55:51.453+02:00  INFO 21444 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
-2024-05-20T20:55:51.983+02:00  INFO 21444 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T20:55:51.996+02:00  INFO 21444 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T20:55:51.996+02:00  INFO 21444 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T20:55:52.048+02:00  INFO 21444 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T20:55:52.049+02:00  INFO 21444 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1209 ms
-2024-05-20T20:55:52.204+02:00  INFO 21444 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T20:55:52.259+02:00  INFO 21444 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T20:55:52.289+02:00  INFO 21444 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T20:55:52.529+02:00  INFO 21444 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T20:55:52.556+02:00  INFO 21444 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T20:55:52.764+02:00  INFO 21444 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@149d7cc6
-2024-05-20T20:55:52.765+02:00  INFO 21444 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T20:55:53.741+02:00  INFO 21444 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T20:55:53.829+02:00  INFO 21444 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:55:54.227+02:00  WARN 21444 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T20:55:54.589+02:00  INFO 21444 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T20:55:54.597+02:00  INFO 21444 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 4.15 seconds (process running for 4.699)
-2024-05-20T20:55:58.183+02:00  INFO 21444 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-20T20:55:58.184+02:00  INFO 21444 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-20T20:55:58.185+02:00  INFO 21444 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-05-20T20:56:04.956+02:00  INFO 21444 --- [education_center] [http-nio-8080-exec-2] de.ait.logging.AspectLogging             : Method addCourse of the class CoursesServicesImpl is called with parameter NewCourseDto(title=New course2, description=Description3, beginDate=2024-02-02, endDate=2024-02-02, price=40.0)
-2024-05-20T20:56:05.009+02:00  INFO 21444 --- [education_center] [http-nio-8080-exec-2] de.ait.logging.AspectLogging             : Method addCourse of the class CoursesServiceImpl finished its work 
-2024-05-20T20:56:24.478+02:00  INFO 21444 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T20:56:24.480+02:00  INFO 21444 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T20:56:24.482+02:00  INFO 21444 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-20T21:01:05.720+02:00  INFO 22272 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 22272 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T21:01:05.722+02:00  INFO 22272 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T21:01:06.317+02:00  INFO 22272 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T21:01:06.383+02:00  INFO 22272 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
-2024-05-20T21:01:06.923+02:00  INFO 22272 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T21:01:06.942+02:00  INFO 22272 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T21:01:06.943+02:00  INFO 22272 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T21:01:06.997+02:00  INFO 22272 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T21:01:06.998+02:00  INFO 22272 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1233 ms
-2024-05-20T21:01:07.164+02:00  INFO 22272 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T21:01:07.220+02:00  INFO 22272 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T21:01:07.250+02:00  INFO 22272 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T21:01:07.474+02:00  INFO 22272 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T21:01:07.497+02:00  INFO 22272 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T21:01:07.685+02:00  INFO 22272 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@274bae2c
-2024-05-20T21:01:07.688+02:00  INFO 22272 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T21:01:08.783+02:00  INFO 22272 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T21:01:08.887+02:00  INFO 22272 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T21:01:09.292+02:00  WARN 22272 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T21:01:09.633+02:00  INFO 22272 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T21:01:09.640+02:00  INFO 22272 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 4.304 seconds (process running for 4.841)
-2024-05-20T21:01:17.530+02:00  INFO 22272 --- [education_center] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-20T21:01:17.531+02:00  INFO 22272 --- [education_center] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-20T21:01:17.532+02:00  INFO 22272 --- [education_center] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-05-20T21:01:17.629+02:00  INFO 22272 --- [education_center] [http-nio-8080-exec-2] de.ait.logging.AspectLogging             : Method getCourse of the class CoursesServiceImpl threw an exception while getting course: message -Course with id <22> not found
-2024-05-20T21:01:26.783+02:00  INFO 22272 --- [education_center] [http-nio-8080-exec-3] de.ait.logging.AspectLogging             : Method getCourse of the class CoursesServiceImpl successfully returned course CourseDto(id=2, title=New course2, description=Description3, beginDate=2024-02-02, endDate=2024-02-02, price=40.0, state=DRAFT)
-2024-05-20T21:01:59.475+02:00  INFO 22272 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T21:01:59.476+02:00  INFO 22272 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T21:01:59.480+02:00  INFO 22272 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-20T21:20:32.213+02:00  INFO 19556 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 19556 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T21:20:32.215+02:00  INFO 19556 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T21:20:32.785+02:00  INFO 19556 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T21:20:32.827+02:00  INFO 19556 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
-2024-05-20T21:20:33.295+02:00  INFO 19556 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T21:20:33.305+02:00  INFO 19556 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T21:20:33.305+02:00  INFO 19556 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T21:20:33.345+02:00  INFO 19556 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T21:20:33.345+02:00  INFO 19556 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
-2024-05-20T21:20:33.474+02:00  INFO 19556 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T21:20:33.515+02:00  INFO 19556 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T21:20:33.552+02:00  INFO 19556 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T21:20:33.715+02:00  INFO 19556 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T21:20:33.746+02:00  INFO 19556 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T21:20:33.946+02:00  INFO 19556 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a2e1e52
-2024-05-20T21:20:33.947+02:00  INFO 19556 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T21:20:34.968+02:00  INFO 19556 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T21:20:35.046+02:00  INFO 19556 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T21:20:35.411+02:00  WARN 19556 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T21:20:35.765+02:00  INFO 19556 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T21:20:35.771+02:00  INFO 19556 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 3.937 seconds (process running for 4.49)
-2024-05-20T21:20:41.130+02:00  INFO 19556 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-20T21:20:41.131+02:00  INFO 19556 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-20T21:20:41.131+02:00  INFO 19556 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-05-20T21:20:41.165+02:00  INFO 19556 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
-2024-05-20T21:20:41.165+02:00  INFO 19556 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
-2024-05-20T21:20:41.165+02:00  WARN 19556 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
-2024-05-20T21:20:41.165+02:00 ERROR 19556 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
-2024-05-20T21:20:41.294+02:00  INFO 19556 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
-2024-05-20T21:22:02.934+02:00  INFO 19556 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T21:22:02.936+02:00  INFO 19556 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T21:22:02.940+02:00  INFO 19556 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-20T21:23:18.329+02:00  INFO 22848 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 22848 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
-2024-05-20T21:23:18.332+02:00  INFO 22848 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-20T21:23:19.091+02:00  INFO 22848 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-20T21:23:19.155+02:00  INFO 22848 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
-2024-05-20T21:23:19.641+02:00  INFO 22848 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-20T21:23:19.652+02:00  INFO 22848 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-20T21:23:19.653+02:00  INFO 22848 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-20T21:23:19.691+02:00  INFO 22848 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-20T21:23:19.691+02:00  INFO 22848 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1319 ms
-2024-05-20T21:23:19.789+02:00  INFO 22848 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-20T21:23:19.826+02:00  INFO 22848 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-20T21:23:19.847+02:00  INFO 22848 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-20T21:23:20.010+02:00  INFO 22848 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-20T21:23:20.026+02:00  INFO 22848 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-20T21:23:20.203+02:00  INFO 22848 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2712e8f4
-2024-05-20T21:23:20.205+02:00  INFO 22848 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-20T21:23:21.123+02:00  INFO 22848 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-20T21:23:21.199+02:00  INFO 22848 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T21:23:21.567+02:00  WARN 22848 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-20T21:23:21.892+02:00  INFO 22848 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-20T21:23:21.901+02:00  INFO 22848 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 3.932 seconds (process running for 4.488)
-2024-05-20T21:23:37.890+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-20T21:23:37.890+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-20T21:23:37.891+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-05-20T21:23:37.923+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
-2024-05-20T21:23:37.923+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
-2024-05-20T21:23:37.923+02:00  WARN 22848 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
-2024-05-20T21:23:37.923+02:00 ERROR 22848 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
-2024-05-20T21:23:38.038+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
-2024-05-20T21:23:38.039+02:00  INFO 22848 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
-2024-05-20T21:23:54.089+02:00  INFO 22848 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-20T21:23:54.091+02:00  INFO 22848 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-20T21:23:54.094+02:00  INFO 22848 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T19:28:31.773+02:00  INFO 23580 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 23580 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
+2024-05-24T19:28:31.792+02:00  INFO 23580 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T19:28:32.558+02:00  INFO 23580 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T19:28:32.621+02:00  INFO 23580 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2024-05-24T19:28:33.311+02:00  INFO 23580 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T19:28:33.325+02:00  INFO 23580 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T19:28:33.325+02:00  INFO 23580 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T19:28:33.382+02:00  INFO 23580 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T19:28:33.382+02:00  INFO 23580 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1522 ms
+2024-05-24T19:28:33.558+02:00  INFO 23580 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T19:28:33.664+02:00  INFO 23580 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T19:28:33.700+02:00  INFO 23580 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T19:28:33.936+02:00  INFO 23580 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T19:28:33.964+02:00  INFO 23580 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T19:28:34.201+02:00  INFO 23580 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c9cafa5
+2024-05-24T19:28:34.203+02:00  INFO 23580 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T19:28:35.537+02:00  INFO 23580 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T19:28:35.673+02:00  INFO 23580 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T19:28:36.194+02:00  WARN 23580 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T19:28:36.655+02:00  WARN 23580 --- [education_center] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 83818abd-6a66-497a-822c-ed31b80e7c30
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-05-24T19:28:36.806+02:00  INFO 23580 --- [education_center] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e9d1119, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d1907fb, org.springframework.security.web.context.SecurityContextHolderFilter@23ee31b8, org.springframework.security.web.header.HeaderWriterFilter@4f466207, org.springframework.web.filter.CorsFilter@6079d219, org.springframework.security.web.csrf.CsrfFilter@67fda9fb, org.springframework.security.web.authentication.logout.LogoutFilter@4f2a0909, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23d0f6be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@282079b9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ed90b04, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5471342, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16422f27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dfb65d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@686ace1f, org.springframework.security.web.access.ExceptionTranslationFilter@14af9f51, org.springframework.security.web.access.intercept.AuthorizationFilter@569b3009]
+2024-05-24T19:28:36.880+02:00  INFO 23580 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T19:28:36.891+02:00  INFO 23580 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 5.634 seconds (process running for 6.382)
+2024-05-24T19:29:01.050+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24T19:29:01.050+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-24T19:29:01.051+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-24T19:59:17.388+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T19:59:17.389+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T19:59:17.389+02:00  WARN 23580 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T19:59:17.389+02:00 ERROR 23580 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T19:59:18.041+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T19:59:18.041+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T20:02:17.384+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-7] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T20:02:17.392+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-7] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T20:02:17.399+02:00  WARN 23580 --- [education_center] [http-nio-8080-exec-7] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T20:02:17.401+02:00 ERROR 23580 --- [education_center] [http-nio-8080-exec-7] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T20:02:17.418+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-7] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T20:02:17.419+02:00  INFO 23580 --- [education_center] [http-nio-8080-exec-7] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T20:08:29.814+02:00  INFO 23580 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T20:08:29.819+02:00  INFO 23580 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T20:08:29.828+02:00  INFO 23580 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T20:10:56.818+02:00  INFO 24900 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 24900 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
+2024-05-24T20:10:56.820+02:00  INFO 24900 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T20:10:57.477+02:00  INFO 24900 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T20:10:57.586+02:00  INFO 24900 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 3 JPA repository interfaces.
+2024-05-24T20:10:58.333+02:00  INFO 24900 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T20:10:58.351+02:00  INFO 24900 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T20:10:58.351+02:00  INFO 24900 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T20:10:58.425+02:00  INFO 24900 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T20:10:58.426+02:00  INFO 24900 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1565 ms
+2024-05-24T20:10:58.633+02:00  INFO 24900 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T20:10:58.728+02:00  INFO 24900 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T20:10:58.778+02:00  INFO 24900 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T20:10:59.089+02:00  INFO 24900 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T20:10:59.129+02:00  INFO 24900 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T20:10:59.434+02:00  INFO 24900 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d8b7ea9
+2024-05-24T20:10:59.436+02:00  INFO 24900 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T20:11:00.678+02:00  INFO 24900 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T20:11:00.772+02:00  INFO 24900 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T20:11:01.255+02:00  WARN 24900 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T20:11:01.836+02:00  INFO 24900 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T20:11:01.841+02:00  INFO 24900 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 5.378 seconds (process running for 5.943)
+2024-05-24T20:12:55.043+02:00  INFO 24900 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24T20:12:55.044+02:00  INFO 24900 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-24T20:12:55.045+02:00  INFO 24900 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-24T20:16:12.875+02:00  INFO 24900 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T20:16:12.878+02:00  INFO 24900 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T20:16:12.886+02:00  INFO 24900 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T20:16:19.818+02:00  INFO 1568 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 1568 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
+2024-05-24T20:16:19.821+02:00  INFO 1568 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T20:16:20.415+02:00  INFO 1568 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T20:16:20.471+02:00  INFO 1568 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2024-05-24T20:16:21.097+02:00  INFO 1568 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T20:16:21.108+02:00  INFO 1568 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T20:16:21.109+02:00  INFO 1568 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T20:16:21.153+02:00  INFO 1568 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T20:16:21.154+02:00  INFO 1568 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2024-05-24T20:16:21.326+02:00  INFO 1568 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T20:16:21.375+02:00  INFO 1568 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T20:16:21.418+02:00  INFO 1568 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T20:16:21.726+02:00  INFO 1568 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T20:16:21.772+02:00  INFO 1568 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T20:16:22.075+02:00  INFO 1568 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5834198f
+2024-05-24T20:16:22.078+02:00  INFO 1568 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T20:16:23.127+02:00  INFO 1568 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T20:16:23.207+02:00  INFO 1568 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T20:16:23.764+02:00  WARN 1568 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T20:16:24.272+02:00  WARN 1568 --- [education_center] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bb1bfb9e-16ea-4802-9928-d39af5c067f9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-05-24T20:16:24.416+02:00  INFO 1568 --- [education_center] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56e9126f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e773b8a, org.springframework.security.web.context.SecurityContextHolderFilter@1d6ed085, org.springframework.security.web.header.HeaderWriterFilter@623c9988, org.springframework.web.filter.CorsFilter@579cfcc4, org.springframework.security.web.csrf.CsrfFilter@bb896e9, org.springframework.security.web.authentication.logout.LogoutFilter@16eca98a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5fc42998, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@37c49a55, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57eb2555, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23974cac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24347d8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6418075c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@490f2fad, org.springframework.security.web.access.ExceptionTranslationFilter@7d5176d6, org.springframework.security.web.access.intercept.AuthorizationFilter@23ee31b8]
+2024-05-24T20:16:24.495+02:00  INFO 1568 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T20:16:24.509+02:00  INFO 1568 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 5.126 seconds (process running for 5.626)
+2024-05-24T20:18:42.953+02:00  INFO 1568 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T20:18:42.956+02:00  INFO 1568 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T20:18:42.963+02:00  INFO 1568 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T21:38:59.204+02:00  INFO 26440 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 26440 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
+2024-05-24T21:38:59.207+02:00  INFO 26440 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T21:39:00.032+02:00  INFO 26440 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T21:39:00.114+02:00  INFO 26440 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2024-05-24T21:39:00.988+02:00  INFO 26440 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T21:39:01.009+02:00  INFO 26440 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T21:39:01.009+02:00  INFO 26440 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T21:39:01.096+02:00  INFO 26440 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T21:39:01.097+02:00  INFO 26440 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1845 ms
+2024-05-24T21:39:01.406+02:00  INFO 26440 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T21:39:01.570+02:00  INFO 26440 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T21:39:01.664+02:00  INFO 26440 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T21:39:02.032+02:00  INFO 26440 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T21:39:02.070+02:00  INFO 26440 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T21:39:02.360+02:00  INFO 26440 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1573e8a5
+2024-05-24T21:39:02.362+02:00  INFO 26440 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T21:39:03.829+02:00  INFO 26440 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T21:39:03.956+02:00  INFO 26440 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T21:39:04.542+02:00  WARN 26440 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T21:39:05.208+02:00  INFO 26440 --- [education_center] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a5eb613, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1eaf4e77, org.springframework.security.web.context.SecurityContextHolderFilter@4fe4b8b6, org.springframework.security.web.header.HeaderWriterFilter@79f82fc4, org.springframework.web.filter.CorsFilter@23cfc9eb, org.springframework.security.web.csrf.CsrfFilter@120661d2, org.springframework.security.web.authentication.logout.LogoutFilter@530ee11a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66450129, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d21d12b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@14af9f51, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1315d910, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fa3bebe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63767d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bfe4df9, org.springframework.security.web.access.ExceptionTranslationFilter@345d4ecb, org.springframework.security.web.access.intercept.AuthorizationFilter@580a5b6e]
+2024-05-24T21:39:05.293+02:00  INFO 26440 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T21:39:05.300+02:00  INFO 26440 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 6.551 seconds (process running for 7.279)
+2024-05-24T21:42:34.920+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24T21:42:34.921+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-24T21:42:34.923+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-24T21:42:35.786+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T21:42:35.787+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T21:42:35.787+02:00  WARN 26440 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T21:42:35.787+02:00 ERROR 26440 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T21:42:35.833+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T21:42:35.834+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T21:42:59.163+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T21:42:59.163+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T21:42:59.163+02:00  WARN 26440 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T21:42:59.163+02:00 ERROR 26440 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T21:42:59.168+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T21:42:59.168+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T21:43:14.121+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-5] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T21:43:14.121+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-5] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T21:43:14.122+02:00  WARN 26440 --- [education_center] [http-nio-8080-exec-5] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T21:43:14.122+02:00 ERROR 26440 --- [education_center] [http-nio-8080-exec-5] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T21:43:14.129+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-5] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T21:43:14.129+02:00  INFO 26440 --- [education_center] [http-nio-8080-exec-5] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T21:46:03.219+02:00  INFO 26440 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T21:46:03.226+02:00  INFO 26440 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T21:46:03.236+02:00  INFO 26440 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T21:54:08.407+02:00  INFO 19492 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 19492 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
+2024-05-24T21:54:08.408+02:00  INFO 19492 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T21:54:09.077+02:00  INFO 19492 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T21:54:09.179+02:00  INFO 19492 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+2024-05-24T21:54:09.902+02:00  INFO 19492 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T21:54:09.916+02:00  INFO 19492 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T21:54:09.916+02:00  INFO 19492 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T21:54:09.972+02:00  INFO 19492 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T21:54:09.973+02:00  INFO 19492 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+2024-05-24T21:54:10.160+02:00  INFO 19492 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T21:54:10.211+02:00  INFO 19492 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T21:54:10.252+02:00  INFO 19492 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T21:54:10.529+02:00  INFO 19492 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T21:54:10.579+02:00  INFO 19492 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T21:54:10.912+02:00  INFO 19492 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@625264ed
+2024-05-24T21:54:10.915+02:00  INFO 19492 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T21:54:12.055+02:00  INFO 19492 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T21:54:12.216+02:00  INFO 19492 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T21:54:12.695+02:00  WARN 19492 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T21:54:13.139+02:00  INFO 19492 --- [education_center] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e243122, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a5c115b, org.springframework.security.web.context.SecurityContextHolderFilter@7bc3c59f, org.springframework.security.web.header.HeaderWriterFilter@689fcf08, org.springframework.web.filter.CorsFilter@49b6373f, org.springframework.security.web.authentication.logout.LogoutFilter@41271320, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58e0d1ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1454339d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1df8e685, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20f3291d, org.springframework.security.web.access.ExceptionTranslationFilter@55b78dad, org.springframework.security.web.access.intercept.AuthorizationFilter@f9d8285]
+2024-05-24T21:54:13.437+02:00  INFO 19492 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T21:54:13.447+02:00  INFO 19492 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 5.361 seconds (process running for 5.814)
+2024-05-24T21:54:23.575+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24T21:54:23.575+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-24T21:54:23.576+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-24T21:54:24.190+02:00  WARN 19492 --- [education_center] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<de.ait.dto.CourseDto> de.ait.controllers.CoursesController.addCourse(de.ait.dto.NewCourseDto)]
+2024-05-24T21:54:41.256+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T21:54:41.257+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T21:54:41.258+02:00  WARN 19492 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T21:54:41.258+02:00 ERROR 19492 --- [education_center] [http-nio-8080-exec-4] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T21:54:41.309+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T21:54:41.310+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-4] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T21:54:45.599+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-7] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T21:54:45.599+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-7] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T21:54:45.599+02:00  WARN 19492 --- [education_center] [http-nio-8080-exec-7] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T21:54:45.600+02:00 ERROR 19492 --- [education_center] [http-nio-8080-exec-7] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T21:54:45.607+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-7] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T21:54:45.608+02:00  INFO 19492 --- [education_center] [http-nio-8080-exec-7] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T21:55:37.290+02:00  INFO 19492 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T21:55:37.294+02:00  INFO 19492 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T21:55:37.304+02:00  INFO 19492 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T21:55:42.157+02:00  INFO 12064 --- [education_center] [main] de.ait.EducationCenterApplication        : Starting EducationCenterApplication using Java 21.0.1 with PID 12064 (C:\Users\sanco\IdeaProjects\JavaPro\education_center\target\classes started by sancos in C:\Users\sanco\IdeaProjects\JavaPro\education_center)
+2024-05-24T21:55:42.159+02:00  INFO 12064 --- [education_center] [main] de.ait.EducationCenterApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T21:55:42.796+02:00  INFO 12064 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T21:55:42.855+02:00  INFO 12064 --- [education_center] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2024-05-24T21:55:43.621+02:00  INFO 12064 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T21:55:43.634+02:00  INFO 12064 --- [education_center] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T21:55:43.634+02:00  INFO 12064 --- [education_center] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T21:55:43.680+02:00  INFO 12064 --- [education_center] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T21:55:43.680+02:00  INFO 12064 --- [education_center] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1476 ms
+2024-05-24T21:55:43.891+02:00  INFO 12064 --- [education_center] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T21:55:43.944+02:00  INFO 12064 --- [education_center] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T21:55:43.990+02:00  INFO 12064 --- [education_center] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T21:55:44.329+02:00  INFO 12064 --- [education_center] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T21:55:44.359+02:00  INFO 12064 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T21:55:44.625+02:00  INFO 12064 --- [education_center] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@42cc420b
+2024-05-24T21:55:44.626+02:00  INFO 12064 --- [education_center] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T21:55:45.843+02:00  INFO 12064 --- [education_center] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T21:55:45.931+02:00  INFO 12064 --- [education_center] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T21:55:46.347+02:00  WARN 12064 --- [education_center] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T21:55:46.680+02:00  INFO 12064 --- [education_center] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f26fc4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e8eea59, org.springframework.security.web.context.SecurityContextHolderFilter@55b78dad, org.springframework.security.web.header.HeaderWriterFilter@1d01fa0c, org.springframework.web.filter.CorsFilter@1fb379e4, org.springframework.security.web.authentication.logout.LogoutFilter@3ec6f3f1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69374e28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@689fcf08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@738153d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f9d8285, org.springframework.security.web.access.ExceptionTranslationFilter@48614fb3, org.springframework.security.web.access.intercept.AuthorizationFilter@58df2864]
+2024-05-24T21:55:46.961+02:00  INFO 12064 --- [education_center] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T21:55:46.968+02:00  INFO 12064 --- [education_center] [main] de.ait.EducationCenterApplication        : Started EducationCenterApplication in 5.194 seconds (process running for 5.85)
+2024-05-24T21:56:07.903+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24T21:56:07.903+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-24T21:56:07.905+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-24T21:56:08.688+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl is called
+2024-05-24T21:56:08.688+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Database request: get all courses
+2024-05-24T21:56:08.688+02:00  WARN 12064 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : Course with title Test course not found
+2024-05-24T21:56:08.688+02:00 ERROR 12064 --- [education_center] [http-nio-8080-exec-1] d.ait.services.impl.CoursesServiceImpl   : SQL exception! Incorrect query
+2024-05-24T21:56:08.710+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl successfully returned courses. Number of courses: 4
+2024-05-24T21:56:08.710+02:00  INFO 12064 --- [education_center] [http-nio-8080-exec-1] de.ait.logging.AspectLogging             : Method getCourses of the class CoursesServiceImpl finished its work
+2024-05-24T21:59:45.146+02:00  INFO 12064 --- [education_center] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T21:59:45.151+02:00  INFO 12064 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T21:59:45.157+02:00  INFO 12064 --- [education_center] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
