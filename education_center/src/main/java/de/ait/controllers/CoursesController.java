@@ -95,4 +95,32 @@ public class CoursesController {
                 .ok(coursesService.updateLessonByIdFromCourse(courseId, lessonId, updateLesson));
     }
 
+    //class works methods
+    @DeleteMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto> deleteLessonFromCourse(
+            @PathVariable("course-id") Long courseId,
+            @PathVariable("lesson-id") Long lessonId) {
+        return ResponseEntity
+                .ok(coursesService.deleteLessonFromCourse(courseId, lessonId));
+    }
+
+    @PutMapping("/{course-id}/lessons/{lesson-id}")
+    public ResponseEntity<LessonDto> updateLessonInCourse(
+            @PathVariable("course-id") Long courseId,
+            @PathVariable("lesson-id") Long lessonId,
+            @RequestBody @Valid UpdateLessonDto updateLesson) {
+        return ResponseEntity
+                .ok(coursesService.updateLessonInCourse(courseId, lessonId, updateLesson));
+    }
+    //добавления студентов курса
+
+    @PostMapping("/{course-id}/students")
+    public ResponseEntity<List<UserDto>> addStudentToCourse(
+            @PathVariable("course-id") Long courseId,
+            @RequestBody StudentToCourseDto studentData) {
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(coursesService.addStudentToCourse(courseId, studentData));
+    }
+
 }

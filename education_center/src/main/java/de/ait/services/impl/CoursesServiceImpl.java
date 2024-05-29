@@ -4,8 +4,10 @@ import de.ait.dto.*;
 import de.ait.exeptions.RestException;
 import de.ait.models.Course;
 import de.ait.models.Lesson;
+import de.ait.models.User;
 import de.ait.repositories.CoursesRepository;
 import de.ait.repositories.LessonsRepository;
+import de.ait.repositories.UsersRepository;
 import de.ait.services.CoursesService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import static de.ait.dto.CourseDto.from;
 import static de.ait.dto.LessonDto.from;
+import static de.ait.dto.UserDto.from;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -29,6 +32,7 @@ public class CoursesServiceImpl implements CoursesService {
     private final CoursesRepository coursesRepository;
     private final LessonsRepository lessonsRepository;
     private Logger logger = LoggerFactory.getLogger(CoursesServiceImpl.class);
+    private final UsersRepository studentRepository;
 
     @Override
     public CourseDto addCourse(NewCourseDto newCourse) {
@@ -98,13 +102,22 @@ public class CoursesServiceImpl implements CoursesService {
     public LessonDto addLessonToCourse(Long courseId, NewLessonDto newLesson) {
         Course course = getCourseOrThrow(courseId);
 
-        Lesson lesson = Lesson.builder()
+        Lesson lesson;
+
+        if (newLesson.getExistsLessonId() != null) {
+           lesson = Lesson.builder()
                 .name(newLesson.getName())
                 .dayOfWeek(DayOfWeek.valueOf(newLesson.getDayOfWeek()))
                 .startTime(LocalTime.parse(newLesson.getStartTime()))
                 .finishTime(LocalTime.parse(newLesson.getFinishTime()))
                 .course(course)//привязка курса к уроку
                 .build();
+        } else {
+            lesson =lessonsRepository.findById(newLesson.getExistsLessonId())
+                    .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                            "Lesson with id <" + newLesson.getExistsLessonId() + "> not found in course with id <" + courseId + ">"));
+            lesson.setCourse(course);
+        }
         lessonsRepository.save(lesson);
         return from(lesson);
 
@@ -169,5 +182,61 @@ public class CoursesServiceImpl implements CoursesService {
         lessonsRepository.save(lesson);
 
         return LessonDto.from(lesson);
+    }
+
+    @Override
+    public LessonDto deleteLessonFromCourse(Long courseId, Long lessonId) {
+        Course course = getCourseOrThrow(courseId);
+
+        // вариант с циклом
+//      Set<Lesson> lessons = course.getLessons();
+//        for (Lesson lesson : lessonsOfCourse) {
+//            if (lesson.getId().equals(lessonId)) {
+//                lesson.setCourse(null);
+//                lessonsRepository.save(lesson);
+//                return from(lesson);
+//            }
+//         throw new RestException(HttpStatus.NOT_FOUND, "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">");
+//        }
+
+        // вариант без цикла
+        Lesson lesson = lessonsRepository.findByCourseAndId(course, lessonId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+        lesson.setCourse(null);
+        lessonsRepository.save(lesson);
+        return from(lesson);
+    }
+
+    @Override
+    public LessonDto updateLessonInCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson) {
+        Course course = getCourseOrThrow(courseId);
+        Lesson lesson = lessonsRepository.findByCourseAndId(course, lessonId)
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Lesson with id <" + lessonId + "> not found in course with id <" + courseId + ">"));
+        lesson.setName(updateLesson.getName());
+        lesson.setDayOfWeek(updateLesson.getDayOfWeek());
+        lesson.setStartTime(updateLesson.getStartTime()); //LocalTime.parse
+        lesson.setFinishTime(updateLesson.getFinishTime());
+        lessonsRepository.save(lesson);
+        return from(lesson);
+    }
+
+    @Override
+    public List<UserDto> addStudentToCourse(Long courseId, StudentToCourseDto studentData) {
+        Course course = getCourseOrThrow(courseId);
+        User student = studentRepository.findById(studentData.getUserId())
+                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND,
+                        "Student with id <" + studentData.getUserId() + "> not found"));
+// не рабочий вариант
+//        course.getStudents().add(student);
+//        coursesRepository.save(course);
+        if (!student.getCourses().add(course)){
+            throw new RestException(HttpStatus.BAD_REQUEST,
+                    "Student with id <" + studentData.getUserId() + "> already added to course with id <" + courseId + ">");
+        }
+        studentRepository.save(student);
+        Set<User> studentsOfCourse = studentRepository.findAllByCoursesContainsOrderById(course);
+        return from(studentsOfCourse);
     }
 }

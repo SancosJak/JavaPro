@@ -22,7 +22,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/users/register/**").permitAll()
                 .requestMatchers(HttpMethod.POST, "/api/courses/**").hasRole(User.Role.ADMIN.toString())
                 .requestMatchers(HttpMethod.PUT, "/api/courses/{course-id}").hasRole(User.Role.ADMIN.toString())
-                .requestMatchers(HttpMethod.DELETE, "/api/courses/{course-id}").hasRole(User.Role.ADMIN.toString())
+                .requestMatchers(HttpMethod.DELETE, "/api/courses/{course-id}/**").hasRole(User.Role.ADMIN.toString())
                 .requestMatchers(HttpMethod.GET, "/hello").permitAll()
 
                 .anyRequest().authenticated()

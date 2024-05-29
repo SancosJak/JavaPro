@@ -24,5 +24,12 @@ public interface CoursesService {
     LessonDto deleteLessonByIdFromCourse(Long courseId, Long lessonId);
 
     LessonDto updateLessonByIdFromCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson);
+
+    LessonDto deleteLessonFromCourse(Long courseId, Long lessonId);
+
+    LessonDto updateLessonInCourse(Long courseId, Long lessonId, UpdateLessonDto updateLesson);
+
+
+    List<UserDto> addStudentToCourse(Long courseId, StudentToCourseDto studentData);
 }
 
