@@ -239,4 +239,11 @@ public class CoursesServiceImpl implements CoursesService {
         Set<User> studentsOfCourse = studentRepository.findAllByCoursesContainsOrderById(course);
         return from(studentsOfCourse);
     }
+
+    @Override
+    public List<UserDto> getStudentsByCourseId(Long courseId) {
+        Course course = getCourseOrThrow(courseId);
+        Set<User> studentsOfCourse = course.getStudents();
+        return from(studentsOfCourse);
+    }
 }

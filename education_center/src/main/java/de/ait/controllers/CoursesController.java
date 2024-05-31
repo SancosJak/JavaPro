@@ -122,5 +122,11 @@ public class CoursesController {
                 .status(HttpStatus.CREATED)
                 .body(coursesService.addStudentToCourse(courseId, studentData));
     }
+    // endpoint GET /api/courses/{course-id}/students
+    @GetMapping("/{course-id}/students")
+    public ResponseEntity<List<UserDto>> getStudentsByCourseId(@PathVariable("course-id") Long courseId) {
+        return ResponseEntity
+                .ok(coursesService.getStudentsByCourseId(courseId));
+    }
 
 }

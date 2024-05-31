@@ -31,5 +31,7 @@ public interface CoursesService {
 
 
     List<UserDto> addStudentToCourse(Long courseId, StudentToCourseDto studentData);
+
+    List<UserDto> getStudentsByCourseId(Long courseId);
 }
 
